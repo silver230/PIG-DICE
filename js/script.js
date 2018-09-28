@@ -65,4 +65,14 @@ $(document).ready(function() { // when the document is ready to
         changePlayerAndRefreshScores();
     });
 
+    $(document).keypress(function(event) {
+     if ((event.which == 122) && (game.activePlayer === 1)) {
+         playerRoll();
+     } else if ((event.which == 47) && (game.activePlayer == 2)) {
+         playerRoll();
+     } else if ((event.which == 32)) {
+         game.hold();
+         changePlayerAndRefreshScores();
+     }
+ });
 });
