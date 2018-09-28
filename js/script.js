@@ -3,4 +3,8 @@ var pigDice = {
   player2:0,
   currentScore:0,
   activePlayer:1,
+
+  rollDice: function() {
+    
+  }
 }
