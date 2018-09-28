@@ -47,4 +47,14 @@ $(document).ready(function() { // when the document is ready to
       $("#player2buttons").show()
     }//assigning the buttons what to do what to do whilwe clicked on
   };
+  checkPlayer();
+
+
+  var playerRoll = function() {
+      var dice = game.rollDice();
+
+      $("#dice").text(dice);
+      changePlayerAndRefreshScores();
+  }
+
 });
