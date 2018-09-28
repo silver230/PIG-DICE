@@ -14,5 +14,16 @@ var pigDice = {
          this.currentScore += roll;
      }
        return roll;
-  }, // to show when the player to continue making their move s or switch
-}
+       // to show when the player to continue making their move s or switch
+  },
+
+  switchActivePlayer: function () {
+    if ( this.activePlayer === 1)
+          this.player += this.currentScore;
+          this.activePlayer = 2;
+  }
+  else {
+    this.player += this.currentScore;
+    this.activePlayer = 1;
+  } // this is to show what happens when the players has been switched
+},
