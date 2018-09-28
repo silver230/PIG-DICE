@@ -80,4 +80,22 @@ $(document).ready(function() { // when the document is ready to
       refreshScores();
       checkPlayer();
   }
+
+  var winCheck = function() {
+      if (game.player1 >= 100) {
+          alert("Player one wins!!");
+          game = Object.create(Pig);
+          player1wins += 1;
+          $("#player1wins").text(player1wins);
+      } else if (game.player2 >= 100) {
+          alert("Player two wins!!");
+          game = Object.create(Pig);
+          player2wins += 1;
+          $("#player2wins").text(player2wins);
+      } //the function to check on the winner
+      var refreshScores = function() {
+            $("#player1score").text(game.player1);
+            $("#player2score").text(game.player2);
+            $("#current").text(game.currentScore);
+        }
 });
