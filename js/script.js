@@ -5,6 +5,7 @@ var pigDice = {
   activePlayer:1,
 
   rollDice: function() {
-    
+    var roll =math.floor(math.random() *6) +1 //to round off the number passed as parameter to its nearest integer and return the number float
+
   }
 }
