@@ -32,3 +32,10 @@ hold: function() {
       this.currentScore = 0;
   }
 };// the hold function helps to add on the marks of the polayer
+
+$(document).ready(function(){// when the document is ready to
+    var game = object.create(pigDice);
+    var player1wins = 0;
+    var player2wins = 0;
+    var checkPlayer =function(){}
+});
