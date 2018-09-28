@@ -27,3 +27,8 @@ var pigDice = {
     this.activePlayer = 1;
   } // this is to show what happens when the players has been switched
 },
+hold: function() {
+      this.switchActivePlayer();
+      this.currentScore = 0;
+  }
+};// the hold function helps to add on the marks of the polayer
