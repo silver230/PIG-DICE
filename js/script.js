@@ -56,5 +56,13 @@ $(document).ready(function() { // when the document is ready to
       $("#dice").text(dice);
       changePlayerAndRefreshScores();
   }
+  $("button#roll").click(function() {
+        playerRoll();
+    });
+
+    $("button#hold").click(function() {
+        game.hold();
+        changePlayerAndRefreshScores();
+    });
 
 });
