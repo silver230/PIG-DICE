@@ -75,4 +75,9 @@ $(document).ready(function() { // when the document is ready to
          changePlayerAndRefreshScores();
      }
  });
+ var changePlayerAndRefreshScores = function() {
+      winCheck();
+      refreshScores();
+      checkPlayer();
+  }
 });
