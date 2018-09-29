@@ -1,0 +1,44 @@
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+.jumbotron{
+  text-align: center;
+  color: white;
+  background-image: url("https://media3.giphy.com/media/3oGRFlpAW4sIHA02NW/giphy.gif?cid=3640f6095baf3a694f4d7736590b4069");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ /* #player{
+      padding: 30px;
+   background-color: red;
+ }
+ #player1{
+      padding: 30px;
+     background-color: red;}
+
+     #player2{
+          padding: 30px;
+         background-color: red;}
+ #play{
+   padding: 30px;
+   background-color:black;
+ }
+ #count{
+      padding: 30px;
+   background-color: yellow;
+ } */
+/* body{
+  background-color:crimson;
+} */
+
+body{
+  background-color:black;
+}

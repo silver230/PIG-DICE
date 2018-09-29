@@ -36,13 +36,15 @@ $(document).ready(function() {
         var player = game.activePlayer;
         if (player === 1) {
 
-            $("#player2buttons").hide();
-            $("#player1buttons").show();
+            $("#player2").hide(4000);
+            $("#player1").show();
+            // alert ("playerturn");
         } else {
+          
 
 
-            $("#player1buttons").hide();
-            $("#player2buttons").show();
+            $("#player1").hide();
+            $("#player2").show(400);
         }
     };
 
