@@ -12,33 +12,20 @@ p  {
 .jumbotron{
   text-align: center;
   color: white;
-  background-image: url("https://media3.giphy.com/media/3oGRFlpAW4sIHA02NW/giphy.gif?cid=3640f6095baf3a694f4d7736590b4069");
+  background-image: url("https://thumbs.gfycat.com/ClearCanineBasilisk-size_restricted.gif");
+  background-repeat:repeat;
+  /* background-size: cover; */
+}
+
+
+body{
+  background-image: url("https://st.depositphotos.com/1518767/1545/v/600/depositphotos_15453449-stock-video-several-rolling-red-dices-against.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
- /* #player{
-      padding: 30px;
-   background-color: red;
- }
- #player1{
-      padding: 30px;
-     background-color: red;}
 
-     #player2{
-          padding: 30px;
-         background-color: red;}
- #play{
-   padding: 30px;
-   background-color:black;
- }
- #count{
-      padding: 30px;
-   background-color: yellow;
- } */
-/* body{
-  background-color:crimson;
-} */
+.levels
+{
 
-body{
-  background-color:black;
-}
+text-align: center;
+color: black;
