@@ -17,11 +17,16 @@ p  {
   /* background-size: cover; */
 }
 
-
+.well{
+  text-align: center;
+  color: black;
+  background-color: gre;
+}
 body{
-  background-image: url("https://st.depositphotos.com/1518767/1545/v/600/depositphotos_15453449-stock-video-several-rolling-red-dices-against.jpg");
+  /* background-image: url("https://st.depositphotos.com/1518767/1545/v/600/depositphotos_15453449-stock-video-several-rolling-red-dices-against.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-image:url("https://wallpapercave.com/wp/wp2222396.jpg");
 }
 
 .levels
