@@ -4,7 +4,7 @@
 
 ## Description
 
-_This web application allows two players to play a game of Pig Dice._
+_This web application allows two players to play a game of Pig Dice._https://silver230.github.io/PIG-dice/
 
 ## Specs
 | Behavior        | Input           | Outcome  |
