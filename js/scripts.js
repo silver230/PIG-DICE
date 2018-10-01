@@ -2,7 +2,7 @@ var Pig = {
     player1: 0,
     player2: 0,
     currentScore: 0,
-    activePlayer: 1,
+    activePlayer: 1,// what i do have
     rollDice: function() {
         var roll = Math.floor(Math.random() * 6) + 1;
         if (roll === 1) {
@@ -11,7 +11,7 @@ var Pig = {
         } else {
             this.currentScore += roll;
         }
-        return roll;
+        return roll;// if the button is rolled
     },
     switchActivePlayer: function() {
         if (this.activePlayer === 1) {
@@ -20,15 +20,15 @@ var Pig = {
         } else {
             this.player2 += this.currentScore;
             this.activePlayer = 1;
-        }
+        }//when players are switched
     },
     hold: function() {
         this.switchActivePlayer();
         this.currentScore = 0;
-    }
+    }//to show when holded what to haappen
 };
 
-$(document).ready(function() {
+$(document).ready(function() {//when the document is ready to work out the following function
     var game = Object.create(Pig);
     var player1wins = 0;
     var player2wins = 0;
@@ -36,19 +36,19 @@ $(document).ready(function() {
         var player = game.activePlayer;
         if (player === 1) {
 
-            $("#player2").hide(4000);
-            $("#player1").show();
+            $("#player2buttons").hide(1000);
+            $("#player1buttons").show();
             // alert ("playerturn");
         } else {
-          
 
 
-            $("#player1").hide();
-            $("#player2").show(400);
+
+            $("#player1buttons").hide();
+            $("#player2buttons").show(500);
         }
     };
 
-    checkPlayer();
+    checkPlayer();// to check the rolling of players
 
 
     var playerRoll = function() {
@@ -69,10 +69,10 @@ $(document).ready(function() {
 
     $(document).keypress(function(event) {
         if ((event.which == 122) && (game.activePlayer === 1)) {
+            playerRoll();// hard game
+        } else if ((event.which == 47) && (game.activePlayer == 2)) {//medium
             playerRoll();
-        } else if ((event.which == 47) && (game.activePlayer == 2)) {
-            playerRoll();
-        } else if ((event.which == 32)) {
+        } else if ((event.which == 32)) {//easy game
             game.hold();
             changePlayerAndRefreshScores();
         }
@@ -98,7 +98,6 @@ $(document).ready(function() {
             $("#player2wins").text(player2wins);
         }
     };
-
     var refreshScores = function() {
         $("#player1score").text(game.player1);
         $("#player2score").text(game.player2);
